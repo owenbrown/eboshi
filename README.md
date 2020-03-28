@@ -42,7 +42,7 @@ Confluence is slow to load. SquareSpace is sluggish. Eboshi pages load nearly in
   - Estimate: 15 min
   - Actual: 1:15 min
 [] Deploy a Hello World Lambda function using AWS Chalice.
-  - Estimate: 5 min
+  - Estimate: 15 min
 - Create a Github repo that holds the actual website.
   - Estimate: 5 min
 - Subscribe the lambda function to the Github repo.
