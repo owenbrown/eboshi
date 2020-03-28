@@ -1,4 +1,4 @@
-# eboshi - Hugo CI/CD for AWS
+# Eboshi - Pretty websites for enlightened collaboration
 The purpose of the project is to create pretty websites that anyone can update by updates a markdown file in a Git repo.
 
 This allows teams to collaborate. Anyone can view the resultin website. 
