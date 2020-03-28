@@ -1,2 +1,7 @@
 .pyc
 /venv
+.chalice/deployments/
+.chalice/venv/
+.chalice/
+.DS_Store
+__pycache__/
