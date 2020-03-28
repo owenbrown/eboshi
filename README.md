@@ -38,8 +38,9 @@ Confluence is $5 per user per month. SquareSpace, which you'd need to host exter
 Confluence is slow to load. SquareSpace is sluggish. Eboshi pages load nearly instantly.
 
 # Project plan
-[] Create an AWS account.
+[x] Create an AWS account.
   - Estimate: 15 min
+  - Actual: 1:15 min
 [] Deploy a Hello World Lambda function using AWS Chalice.
   - Estimate: 5 min
 - Create a Github repo that holds the actual website.
