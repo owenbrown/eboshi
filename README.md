@@ -48,7 +48,7 @@ Confluence is slow to load. SquareSpace is sluggish. Eboshi pages load nearly in
   - Estimate: 5 min
   - Actual: 5 min
 - [ ] Subscribe the lambda function to the Github repo.
-  - Estimate: 15 min
+  - Estimate: 25 min
 - [ ] Verify that the lambda function executes when pushes are made to the Github repo.
   - Estimate: 5 min
 - [ ] Update the lambda function to git-clone the repo into local storage.

@@ -11,4 +11,8 @@ I forgot that I needed do the following:
 - Create add credentials to terminal.
 
 Update estimate for deploying chalice
+Expectation: 5 min.
+Reality: 2 hours
 - I forgot that I needed to create a virtual environment, install dependencies, and make sure my AWS CLI would work. Changing estimate to 15 minutes.
+- I forgot that the hardest thing about using Chalice is that it doesn't give you error when something isn't working. Instead, it just hangs.
+-
