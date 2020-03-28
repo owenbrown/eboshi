@@ -1,7 +1,7 @@
 
 The purpose of the project is to create pretty websites that anyone can update by updates a markdown file in a Git repo.
 
-This allows teams to collaborate. Anyone can view the resultin website.
+This allows teams to collaborate. Anyone can view the result in website.
 ![Lady Eboshi](https://vignette.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png/revision/latest?cb=20181025001610)
 
 
@@ -38,6 +38,7 @@ Confluence is $5 per user per month. SquareSpace, which you'd need to host exter
 Confluence is slow to load. SquareSpace is sluggish. Eboshi pages load nearly instantly.
 
 # Project plan
+
 - [x] Create an AWS account.
   - Estimate: 15 min
   - Actual: 2:00 hours
