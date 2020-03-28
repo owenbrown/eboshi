@@ -1,5 +1,8 @@
-# Eboshi - Hugo CI/CD for AWS
-The purpose of the project is to host a nearly pretty website that I can update instantly and that other people can contribute to through Github pull requests.
+
+The purpose of the project is to create pretty websites that anyone can update by updates a markdown file in a Git repo.
+
+This allows teams to collaborate. Anyone can view the resultin website.
+![Lady Eboshi](https://vignette.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png/revision/latest?cb=20181025001610)
 
 
 ## Why you need this
