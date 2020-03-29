@@ -5,8 +5,13 @@ app = Chalice(app_name='eboshi')
 
 @app.route('/')
 def index():
+    print("index hit")
     return {'hello': 'world'}
 
+@app.route('/push', methods=['GET', 'POST'])
+def myview():
+    print("/push route hit")
+    return {'hello': 'world'}
 
 # The view function above will return {"hello": "world"}
 # whenever you make an HTTP GET request to '/'.

@@ -1,0 +1,52 @@
+# Project plan
+
+- [x] Create an AWS account.
+  - Estimate: 15 min
+  - Actual: 2:00 hours
+- [x] Deploy a Hello World Lambda function using AWS Chalice.
+  - Estimate: 15 min
+  - Actual: 2 hours
+- [x] Create a Github repo that holds the actual website.
+  - Estimate: 5 min
+  - Actual: 5 min
+
+- [x] Subscribe the lambda function to the Github repo.
+  - [x] Add post method to the lambda function.
+  - Estimate: 25 min
+  - Actual: 40 min
+- [x] Verify that the lambda function executes when pushes are made to the Github repo.
+  - Estimate: 5 min
+  - Actual: 5 min
+- [ ] Update the lambda function to git-clone the repo into local storage.
+  - Estimate: 20 min
+- [ ] Add Hugo binary to the lambda function.
+    Estimate: 40 min
+    - [ ] Download Hugo locally
+      - Estimate: 5 min
+    - [ ] Add to Lambda function. No layers.
+      - Estimate: 5 min
+    - [ ] Run in the lambda function using BASH, verifying that it can be executed at all.
+      - Estimate: 20 min.
+    - [ ] Print a walk of the directory, verifying that files were created
+      - Estimate: 10 min.
+- [ ] Create two S3 buckets - one for dev and one for prod.
+  - Estimate - 10 minutes
+- [ ] Change Hugo to in the Lambda function to push to S3 instead of leaving the files locally.
+  - Estimate - 30 minutes
+- [ ] Change the markdown source repo. Verify that updating the repo triggers the lambda function.
+  - Estimate: 5 min.
+- [ ] Purchase a domain name.
+  - Estimate: 10 min.
+- [ ] Move static hosting to HTTPS S3.
+  - [ ] Add CloudFront
+     - 20 min
+  - [ ] Generate ACM. Add HTTPS.
+     - 20 min
+  - [ ] Connect S3 bucket to website.
+     - 20 min
+  - [ ] Verify that get requests to the domain name display the file.
+     - 10 min
+  - Estimate - 2 hour
+  - Estimate: 45 min.
+- Start adding nested pages and other special Hugo functions.
+  - Set new goals.
