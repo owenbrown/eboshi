@@ -18,10 +18,18 @@ def index():
 @app.route('/push', methods=['GET', 'POST'])
 def push():
     print("/push route hit")
-    res = requests.get(GITHUB_ZIP_URL)
-    open('data.zip', 'wb').write(res.content)
-    print("The request was successful.")
-    z = zipfile.Zipfile(file='data.zip')
+
+    try:
+        os.makedirs("repo")
+    except FileExistsError:
+        # directory already exists
+        pass
+    res = requests.get(GITHUB_ZIP_URL, allow_redirects=True)
+    # print(res)
+    # print(res.headers)
+    open('repo/zipfile.zip', 'wb').write(res.content)
+    zipfile.ZipFile(file='repo/zipfile.zip').extractall('repo')
+
     return {'hello': 'world'}
 
 
