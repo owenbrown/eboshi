@@ -1,7 +1,10 @@
+.idea
 .pyc
 /venv
 .chalice/deployments/
 .chalice/venv/
 .chalice/
 .DS_Store
+repo/
+
 __pycache__/

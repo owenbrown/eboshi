@@ -1,4 +1,10 @@
+import zipfile
+
+import requests
 from chalice import Chalice
+import os
+
+GITHUB_ZIP_URL = 'https://github.com/owenbrown/ashitaka/archive/master.zip'
 
 app = Chalice(app_name='eboshi')
 
@@ -8,10 +14,29 @@ def index():
     print("index hit")
     return {'hello': 'world'}
 
+
 @app.route('/push', methods=['GET', 'POST'])
-def myview():
+def push():
     print("/push route hit")
+    res = requests.get(GITHUB_ZIP_URL)
+    open('data.zip', 'wb').write(res.content)
+    print("The request was successful.")
+    z = zipfile.Zipfile(file='data.zip')
     return {'hello': 'world'}
+
+
+if __name__ == '__main__':
+    try:
+        os.makedirs("repo")
+    except FileExistsError:
+        # directory already exists
+        pass
+    res = requests.get(GITHUB_ZIP_URL, allow_redirects=True)
+    print(res)
+    print(res.headers)
+    open('repo/zipfile.zip', 'wb').write(res.content)
+    zipfile.ZipFile(file='repo/zipfile.zip').extractall('repo')
+
 
 # The view function above will return {"hello": "world"}
 # whenever you make an HTTP GET request to '/'.
