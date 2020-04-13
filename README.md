@@ -1,4 +1,13 @@
+# This is cancelled
+Gitlab Pages provides an excellent way to host websites for free. 
 
+I'm currently using it to host https://owentbrown.com
+
+By default, it doesn't use a content delivery network, so pages load slower than Eboshi.
+
+I intended for Eboshi to use AWS Lambda instead of a Docker-based CI/CD pipeline. Gitlab makes you wait 45 seconds between deploys. 
+
+## Purpose
 The purpose of the project is to create pretty websites that anyone can update by updates a markdown file in a Git repo.
 
 This allows teams to collaborate. Anyone can view the result in website.
